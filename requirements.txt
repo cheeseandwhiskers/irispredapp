@@ -3,4 +3,5 @@ Flask==1.1.2
 Flask-Cors==3.0.10
 mysql-connector-python==8.0.23
 PyJWT==2.1.0
+sklearn==0.0
 gunicorn
