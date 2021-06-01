@@ -102,6 +102,9 @@ https://templatemo.com/tm-541-host-cloud
             {% endif %}
           </div>
           <div class="col-md-8 offset-md-2">
+            <div class="content">
+              <h2>Enter measurements for prediction: </h2>
+            </div>
             <div name="content" class="content">
               <div class="contact-form">
                 <form id="predictform" name="predictform" method="POST" action="/doPrediction">
@@ -112,25 +115,25 @@ https://templatemo.com/tm-541-host-cloud
                     {% set petal_width=data['formInput']['pw'] %}
                   {% endif %}
                   <div class="row">
-                    <div class="col-md-12 col-sm-12">
+                    <div class="col-md-3 col-sm-3">
                       <fieldset>
                         <label for="sepal_length">Sepal Length (cm):</label><br>
                         <input name="sepal_length" type="text" id="sepal_length" placeholder="Sepal Length" required="" value="{{ sepal_length if sepal_length else '' }}">
                       </fieldset>
                     </div>
-                    <div class="col-md-12 col-sm-12">
+                    <div class="col-md-3 col-sm-3">
                       <fieldset>
                         <label for="sepal_width">Sepal Width (cm):</label><br>
                         <input name="sepal_width" type="text" id="sepal_width" placeholder="Sepal Width" required="" value="{{ sepal_width if sepal_width else '' }}">
                       </fieldset>
                     </div>
-                    <div class="col-md-12 col-sm-12">
+                    <div class="col-md-3 col-sm-3">
                       <fieldset>
                         <label for="petal_length">Petal Length (cm):</label><br>
                         <input name="petal_length" type="text" id="petal_length" placeholder="Petal Length" required="" value="{{ petal_length if petal_length else '' }}">
                       </fieldset>
                     </div>
-                    <div class="col-md-12 col-sm-12">
+                    <div class="col-md-3 col-sm-3">
                       <fieldset>
                         <label for="petal_width">Petal Width (cm):</label><br>
                         <input name="petal_width" type="text" id="petal_width" placeholder="Petal Width" required="" value="{{ petal_width if petal_width else '' }}">
